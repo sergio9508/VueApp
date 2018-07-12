@@ -6,6 +6,7 @@ import VueResource from "vue-resource";
 import VueRouter from "vue-router";
 import Test from "./components/Test";
 import prueba from "./components/prueba";
+import table from "./components/table";
 Vue.config.productionTip = false;
 Vue.use(VueResource);
 Vue.use(VueRouter);
@@ -20,6 +21,10 @@ const router = new VueRouter({
     {
       path: "/Test",
       component: prueba
+    },
+    {
+      path: "/table",
+      component: table
     }
   ]
 });

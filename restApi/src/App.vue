@@ -13,6 +13,11 @@
             Test
           </router-link>
         </li>
+        <li>
+          <router-link to="/table">
+            Table
+          </router-link>
+        </li>
       </ul>
     </nav>
     <router-view></router-view>
@@ -23,11 +28,13 @@
 <script>
 import Test from "./components/Test";
 import prueba from "./components/prueba";
+import table from "./components/table";
 export default {
   name: "App",
   components: {
     prueba,
-    Test
+    Test,
+    table
   }
 };
 </script>
